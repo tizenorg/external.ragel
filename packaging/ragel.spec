@@ -1,6 +1,6 @@
 Name:       ragel
 Summary:    Ragel
-Version:    6.7b01
+Version:    6.8
 Release:    1
 Group:      TO_BE/FILLED_IN
 License:    TO BE FILLED IN
