@@ -1,6 +1,6 @@
 Name:       ragel
 Summary:    Ragel
-Version:    6.6
+Version:    6.8
 Release:    1
 Group:      TO_BE/FILLED_IN
 License:    TO BE FILLED IN
@@ -36,8 +36,11 @@ make %{?jobs:-j%jobs}
 %install
 rm -rf %{buildroot}
 %make_install
+mkdir -p %{buildroot}/usr/share/license
+cp %{_builddir}/%{buildsubdir}/COPYING %{buildroot}/usr/share/license/%{name}
 
 
 %files
 %{_bindir}/ragel
 %{_defaultdocdir}/*
+/usr/share/license/%{name}
